@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html속성 연습</title>
+  </head>
+
+  <body>
+    <!-- id 속성 : 요소를 고유하게 식별. 이름붙여주는거라고 생각. (한페이지에 값은 유일해야함.) -->
+    <h1 id="main-title">HTML 속성 배우기</h1>
+
+    <!-- class 속성 : 여러 요소에 공통 스타일을 적용할 때 많이 사용. -->
+    <p class="info-text">이것은 첫번째 문단입니다.</p>
+    <p class="info-text">이것은 두번째 문단입니다.</p>
+
+    <!-- src , alt 속성 : 이미지 삽입 시 필수속성. src는 경로 , alt는 이미지가 없을시 띄울 문구.-->
+    <img src="../ch02/abc.png" alt="이미지 없음" />
+
+    <!-- a태그 href 속성 : 링크(하이퍼텍스트) 연결 
+     target = _blank(새창) , _self(현재창에서 바로 이동)-->
+    <a href="https://www.naver.com" target="_self">우리 회사 사이트 방문</a>
+
+    <!-- style 속성 : 인라인 css 스타일 적용 -->
+    <div style="color: blueviolet; font-size: 22px">스타일 속성 테스트</div>
+
+    <!-- data 속성 : 사용자 정의 속성 -->
+    <button data-type="mybutton" onclick="alert('클릭됨')">버튼</button>
+  </body>
+</html>
