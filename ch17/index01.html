@@ -29,20 +29,25 @@
 
   <body>
     <h1>유저 전체 목록 조회</h1>
-    <form action="http://localhost:8080/api/users">
+    <form action="http://localhost:8080/api/users" method="get">
       <button type="submit">전체 유저 조회</button>
     </form>
 
+    <p>================================================</p>
+
     <h1 id="s">유저 조회</h1>
-    <form action="http://localhost:8080/api/users">
+    <form action="http://localhost:8080/api/users" method="get">
       <input type="text" placeholder="유저 id 입력" />
       <button type="submit">유저 검색</button>
     </form>
 
+    <p>================================================</p>
+
     <h1 id="c">유저 등록</h1>
-    <form action="http://localhost:8080/api/users">
-      <input type="text" name="name" />
-      <input type="email" name="email" />
+    <form action="http://localhost:8080/api/users" method="post">
+      <input type="text" name="name" placeholder="이름 입력" />
+      <br />
+      <input type="email" name="email" placeholder="이메일 입력" />
       <button>유저 등록</button>
     </form>
   </body>
