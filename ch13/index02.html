@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+
+        /* 박스모델의 크기를 계산하는 기준 - 기본값 : border-box */
+        box-sizing: border-box;
+
+        .box {
+          background-color: lightblue;
+          width: 200px;
+          height: 100px;
+        }
+        .box {
+          padding: 20px;
+        }
+        .box {
+          border: 5px solid black;
+        }
+
+        /* box-sizing: content-box 설정하면 요소 크기에 margin(외부여백이므로)은 포함 안됨.  */
+        .box {
+          margin: 10px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="box">div 태그 1 박스 모델</div>
+    <div>div 태그 2</div>
+    <hr />
+    <div>
+      <pre>
+        요소 크기 계산해보기 
+        전체 너비 = width + 좌우 padding + 좌우 border + 좌우 margin
+        전체 높이 = height + 상하 padding + 상하 border + 상하 margin
+
+        width: 200px
+        padding: 20px
+        border: 5px
+        margin: 10px
+        - 박스모델 크기를 계산하는 기준 
+            box-sizing: content-box 기준 (기본값) 
+            전체 너비 : 200 + 20 + 20 + 5 + 5  = 250px
+            - 요소 자체의 너비: 200 + 40 + 10 = 250px
+            - 레이아웃에서 차지하는 총 공간: 250 + 20(마진값추가) = 270px
+        
+    </pre
+      >
+    </div>
+  </body>
+</html>

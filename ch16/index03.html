@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>스크롤 가능한 메시지 박스</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100vh;
+        height: 100vh;
+      }
+      .message-box {
+        width: 300px;
+        height: 150px;
+        border: 2px solid #333;
+        margin-bottom: 20px;
+        padding: 10px;
+        background-color: #f0f0f0;
+      }
+      .box-hidden {
+        overflow: hidden;
+      }
+      .box-auto {
+        overflow: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>스크롤 가능한 메시지 박스</h2>
+
+    <h3>1. overflow: hidden (넘치는 부분 숨김)</h3>
+    <div class="message-box box-hidden">
+      안녕하세요! 이 메시지는 아주 길어서 박스를 넘치게 됩니다. 넘치는 부분은
+      숨겨집니다. 더 많은 텍스트가 있지만 보이지 않을 거예요. 계속해서 더 길게
+      작성해 볼게요. 정말 정말 긴 메시지입니다. 끝까지 읽어보세요! 안녕하세요!
+      이 메시지는 아주 길어서 박스를 넘치게 됩니다. 넘치는 부분은 숨겨집니다. 더
+      많은 텍스트가 있지만 보이지 않을 거예요. 계속해서 더 길게 작성해 볼게요.
+      정말 정말 긴 메시지입니다. 끝까지 읽어보세요!
+    </div>
+
+    <h3>2. overflow: scroll (항상 스크롤바 표시)</h3>
+    <div class="message-box box-scroll">
+      안녕하세요! 이 메시지는 아주 길어서 박스를 넘치게 됩니다. 스크롤바가 항상
+      표시됩니다. 더 많은 텍스트가 있지만 스크롤로 볼 수 있어요. 계속해서 더
+      길게 작성해 볼게요. 정말 정말 긴 메시지입니다. 끝까지 읽어보세요!
+    </div>
+
+    <h3>3. overflow: auto (넘칠 때만 스크롤바 표시)</h3>
+    <div class="message-box box-auto">
+      안녕하세요! 이 메시지는 아주 길어서 박스를 넘치게 됩니다. 넘칠 때만
+      스크롤바가 표시됩니다. 더 많은 텍스트가 있지만 스크롤로 볼 수 있어요.
+      계속해서 더 길게 작성해 볼게요. 정말 정말 긴 메시지입니다. 끝까지
+      읽어보세요!
+    </div>
+  </body>
+</html>

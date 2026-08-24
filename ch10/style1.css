@@ -1,0 +1,19 @@
+/* 문제 1: container 안 모든 <p> 태그 (자손 선택자) 글자 색상을 파란색으로 표시 */
+
+/* 문제 2: container의 직계 자식 <p> 태그 (자식 선택자) 글자를 굵게 표시 */
+
+/* 문제 3: <h2> 바로 뒤 <p> 태그 (인접 형제 선택자) 배경 색상을 노란색으로 표시 */
+
+/* 문제 4: <h2> 뒤 모든 <p> 태그 (일반 형제 선택자) 폰트 사이즈를 20px으로 표시 */
+.container p {
+  color: blue;
+}
+.container > p {
+  font-weight: bold;
+}
+h2 + p {
+  background-color: yellow;
+}
+h2 ~ p {
+  font-size: 20px;
+}

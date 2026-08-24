@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* [속성=값] : 정확한 속성과 값으로 요소를 선택함. */
+      input[type="text"] {
+        border: 1px solid gray;
+        padding: 5px;
+        width: 200px;
+      }
+      input[type="submit"] {
+        background-color: blue;
+        color: white;
+        padding: 5px 10px;
+        cursor: pointer;
+      }
+
+      /* 속성 값에 특정 단어가 포함된 경우(완전 일치) -> [속성~=값]*/
+      p[class~="highlight"] {
+        background-color: yellow;
+        padding: 5px;
+        display: inline-block;
+      }
+
+      /* 단독으로 속성만 선택하고 싶은경우 -> [속성] */
+      [data-type] {
+        border: 2px dashed green;
+        margin: 10px 0;
+        padding: 10px;
+      }
+
+      /* 일부 단어만 포함된 속성값을 선택하고 싶을 때 -> [속성*=값)*/
+      [data-role*="edito"] {
+        color: red;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <input type="text" placeholder="텍스트 입력" />
+    <input type="submit" value="제출" />
+    <p class="content highlight main">강조된 문단입니다.</p>
+    <div data-type="card">카드 형태의 컨텐츠입니다.</div>
+    <span data-role="viewer editor">편집자 역할입니다.</span>
+  </body>
+</html>
