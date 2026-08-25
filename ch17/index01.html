@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+<<<<<<< HEAD
       .container {
         border: 2px solid green;
         padding: 10px;
@@ -20,15 +21,64 @@
         text-align: center;
         color: white;
         border: 2px solid black;
+=======
+      button {
+        background-color: rgb(211, 207, 207);
+        padding: 10px 20px;
+        font-size: 15px;
+        font-weight: 600;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: gray;
+      }
+      input {
+        padding: 7px 5px;
+        font-size: 20px;
+      }
+      p {
+        font-size: 30px;
+      }
+      #s {
+        color: rgb(128, 37, 37);
+      }
+      #c {
+        color: rgb(35, 17, 138);
+>>>>>>> eba89db1b49c7a085b8fa6ab4848c60f460f5656
       }
     </style>
   </head>
 
   <body>
+<<<<<<< HEAD
     <div class="container">
       <div class="item">1</div>
       <div class="item">2</div>
       <div class="item">3</div>
     </div>
+=======
+    <h1>유저 전체 목록 조회</h1>
+    <form action="http://localhost:8080/api/users" method="get">
+      <button type="submit">전체 유저 조회</button>
+    </form>
+
+    <p>===========================================================</p>
+
+    <h1 id="s">유저 조회</h1>
+    <form action="http://localhost:8080/api/users" method="get">
+      <input type="text" name="id" placeholder="유저 id 입력" />
+      <button type="submit">유저 검색</button>
+    </form>
+
+    <p>===========================================================</p>
+
+    <h1 id="c">유저 등록</h1>
+    <form action="http://localhost:8080/api/users" method="post">
+      <input type="text" name="name" placeholder="이름 입력" />
+      <br />
+      <input type="text" name="email" placeholder="이메일 입력" />
+      <button type="submit">유저 등록</button>
+    </form>
+>>>>>>> eba89db1b49c7a085b8fa6ab4848c60f460f5656
   </body>
 </html>
