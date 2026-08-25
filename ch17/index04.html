@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        padding: 10px;
+        border: 2px solid green;
+
+        /* 공간이 있어야 정렬됨.*/
+        height: 500px;
+        flex-direction: row;
+
+        /* 교차축 방향 정렬 */
+        align-items: flex-end;
+
+        justify-content: flex-end;
+      }
+      .item {
+        width: 100px;
+        height: 100px;
+        background-color: peru;
+        margin: 5px;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+  </body>
+</html>

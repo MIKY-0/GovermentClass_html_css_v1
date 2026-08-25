@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        border: 2px solid green;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+      #r {
+        flex-direction: row;
+      }
+      #c {
+        flex-direction: column;
+      }
+      #rr {
+        flex-direction: row-reverse;
+      }
+      .item {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(236, 49, 49);
+        margin: 5px;
+        border: 2px solid black;
+        text-align: center;
+        font-weight: 800;
+      }
+
+      /* 공백없이 바로 붙이면 AND 조건 : 복합선택자 */
+      .container.row {
+        flex-direction: row;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h3>flex-direction: row</h3>
+    <div class="container row" id="r">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+
+    <h3>flex-direction: column</h3>
+    <div class="container" id="c">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+
+    <h3>flex-direction: row-reverse</h3>
+    <div class="container" id="rr">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+  </body>
+</html>
